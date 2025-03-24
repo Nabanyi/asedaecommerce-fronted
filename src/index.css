@@ -1,0 +1,64 @@
+.cursor-pointer{
+    cursor: pointer;
+}
+
+body{
+    /* background-color: #e7f1ff!important; */
+    background-color: #eee;
+}
+
+.navbar-nav .nav-link{
+    color: #3d8bfd!important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active{
+    color: #ffffff!important;
+}
+
+.price-display {
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  
+.price-display .amount {
+    font-size: 24px;
+    vertical-align: middle;
+}
+  
+.price-display .currency {
+    font-size: 12px;
+    vertical-align: super;
+}
+
+.price-display-small {
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  
+.price-display-small .amount {
+    font-size: 14px;
+    vertical-align: middle;
+}
+  
+.price-display-small .currency {
+    font-size: 10px;
+    vertical-align: super;
+}
+
+.dt-buttons{
+    display: none!important;
+}
+
+.fixed-sidebar {
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.table-address {
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+}
