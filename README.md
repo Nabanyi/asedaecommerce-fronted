@@ -1,55 +1,57 @@
-# React + TypeScript + Vite
+# Aseda E-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aseda E-commerce is a web application built with React and TypeScript. It provides a platform for users to browse and purchase products, manage their cart, and place orders. The application includes features such as filtering and sorting products, managing user profiles, and handling orders.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Product Listing**: Browse and search for products.
+<img src="browse.png" alt="Ecommerce API">
+- **Filtering and Sorting**: Filter products by categories, brands, and other criteria. Sort products by price, date, etc.
+<img src="sorting.png" alt="Ecommerce API">
+- **Cart Management**: Add products to the cart, view cart items, and remove items from the cart.
+<img src="cart.png" alt="Ecommerce API">
+- **Order Management**: Place orders, view order history, and manage addresses.
+<img src="orders.png" alt="Ecommerce API">
+- **User Profile**: Manage user profile information and addresses.
+<img src="profile.png" alt="Ecommerce API">
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **React Bootstrap**: A library of reusable front-end components.
+- **SweetAlert2**: A library for creating beautiful, responsive, customizable, and accessible (WAI-ARIA) replacement for JavaScript's popup boxes.
+- **DataTables**: A plug-in for the jQuery JavaScript library that adds advanced interaction controls to HTML tables.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/asedaecommerce.git
+    cd asedaecommerce
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# asedaecommerce-fronted
+3. Start the development server:
+    ```bash
+    npm start
+    ```
+
+## Project Structure
+
+- **src/components**: Contains reusable React components.
+- **src/pages**: Contains the main pages of the application.
+- **src/utils**: Contains utility functions and helpers.
+- **src/styles**: Contains CSS and styling files.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License.
