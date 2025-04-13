@@ -27,7 +27,7 @@ Aseda E-commerce is a web application built with React and TypeScript. It provid
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/asedaecommerce.git
+    git clone https://github.com/Nabanyi/asedaecommerce-fronted.git
     cd asedaecommerce
     ```
 
